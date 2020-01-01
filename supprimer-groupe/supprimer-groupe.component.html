@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+<div class="bg-1">
+<div class="container-fluid">
+<h1 class="text-center">Suppression d'un groupe</h1>
+<h5 class="text-center">Choisissez le groupe à supprimer</h5>
+
+<div id="chatDisplay"></div>
+    
+<form [formGroup]="supprimerGroupe" (ngSubmit)="callingFunction()" class="text-center" routerLink="/groupes" method="get">
+        <input type="text" formControlName="lettre" placeholder="Entrez le nom du groupe"><br><br>
+        <input type="submit" name="Supprimer le groupe">
+</form>
+    
+<!--form id="myChatForm" action="delete_groupe" method="get">
+    <input type="text" name="lettre" placeholder="Entrez le nom du groupe"><br><br>
+    <input type="submit" name="Supprimer le groupe">
+    
+    <!--a href="add_groupe" class="btn-primary btn-lg" role="button">Créer le groupe</a>
+</form-->
+    
+
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<footer class="container-fluid bg-5 text-center">
+<div id="footer">World Football Cup &copy; 2019 Acina Vick <br/> 

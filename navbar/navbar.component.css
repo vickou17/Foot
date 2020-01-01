@@ -1,0 +1,25 @@
+.navbar {
+  	  background-color: #ff0066;
+      color: WHITE;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+    textarea {
+    resize: none;
+  }
+  #poster {
+    background: #ff0066; 
+    color: #000000;
+    width: 40%;
+    border: none;
+    display: block;
+    margin : auto;
+  }
+  .navbar-nav  li a:hover {
+      color: black !important;
+  }
