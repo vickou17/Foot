@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+<div class="bg-1">
+<div class="container-fluid">
+<h1 class="text-center">Création d'un groupe</h1>   
+
+<div id="chatDisplay"></div>
+
+    
+<form [formGroup]="creerGroupe" (ngSubmit)="callingFunction()" class="text-center" routerLink="/groupes" method="get">
+        <input type="text" formControlName="lettre" placeholder="Entrez le nom du groupe"><br>
+        <input type="text" formControlName="equipe1" placeholder="Equipe 1"><br>
+        <input type="text" formControlName="equipe2" placeholder="Equipe 2"><br>
+        <input type="text" formControlName="equipe3" placeholder="Equipe 3"><br>
+        <input type="text" formControlName="equipe4" placeholder="Equipe 4"><br><br>
+        <input type="submit" onclick="getInputValue();" name="Créer le groupe">
+</form>
+    
+<!--form id="myChatForm" action="add_groupe" method="get">
+    <input type="text" name="lettre" placeholder="Entrez le nom du groupe"><br>
+    <input type="text" name="equipe1" placeholder="Entrez le nom de l'équipe 1">
+    <input type="text" name="equipe2" placeholder="Entrez le nom de l'équipe 2"><br>
+    <input type="text" name="equipe3" placeholder="Entrez le nom de l'équipe 3">
+    <input type="text" name="equipe4" placeholder="Entrez le nom de l'équipe 4"><br><br>
+    <input type="submit" onclick="getInputValue();" name="Créer le groupe">
+    
+    <!--a href="add_groupe" class="btn-primary btn-lg" role="button">Créer le groupe</a>
+</form-->
+    
+
+<br/><br/><br/><br/><br/><br/><br/>
+<footer class="container-fluid bg-5 text-center">
+<div id="footer">World Football Cup &copy; 2019 Acina Vick <br/> 

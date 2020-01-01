@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+<div class="bg-1">
+<div class="container-fluid">
+<h1 class="text-center">Résultat d'une rencontre</h1>   
+
+<div id="chatDisplay"></div>
+
+<form [formGroup]="creerRencontre" (ngSubmit)="callingFunction()" class="text-center" routerLink="/rencontres" method="get">
+        <input type="text" formControlName="lettre" placeholder="Entrez le nom du groupe"><br>
+        <input type="text" formControlName="equipe1" placeholder="Equipe à domicile">
+        <input type="text" formControlName="equipe2" placeholder="Equipe à l'extérieur"><br>
+        <input type="text" formControlName="resultat1" placeholder="Résultat domicile">
+        <input type="text" formControlName="resultat2" placeholder="Résultat extérieure"><br><br>
+        <input type="submit" name="Créer la rencontre">
+</form>
+    
+<!--form id="myChatForm" action="add_rencontre" method="get">
+    <input type="text" name="lettre" placeholder="Entrez le nom du groupe"><br>
+    <input type="text" name="equipe1" placeholder="Equipe à domicile">
+    <input type="text" name="equipe2" placeholder="Equipe à l'extérieure"><br>
+    <input type="text" name="resultat1" placeholder="Résultat domicile">
+    <input type="text" name="resultat2" placeholder="Résultat extérieure"><br><br>
+    <input type="submit" name="Créer la rencontre">
+    
+    <!--a href="add_rencontre" class="btn-primary btn-lg" role="button">Créer le groupe</a>
+</form-->
+  
+<br/><br/><br/><br/><br/><br/><br/>
+<div id="footer" class="text-center">World Football Cup &copy; 2019, Acina Vick </div>
