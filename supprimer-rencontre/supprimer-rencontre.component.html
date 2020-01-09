@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+<div class="bg-1">
+<div class="container-fluid">
+<h1 class="text-center">Supprimer une rencontre</h1>   
+
+<div id="chatDisplay"></div>
+    
+<form [formGroup]="supprimerRencontre" (ngSubmit)="callingFunction()" class="text-center" routerLink="/rencontres" method="get">
+        <input type="text" formControlName="lettre" placeholder="Entrez le nom du groupe"><br>
+        <input type="text" formControlName="equipe1" placeholder="Equipe à domicile">
+        <input type="text" formControlName="equipe2" placeholder="Equipe à l'extérieur"><br><br>
+        <input type="submit" name="Créer la rencontre">
+</form>
+    
+<!--form id="myChatForm" action="delete_rencontre" method="get">
+    <input type="text" name="equipe1" placeholder="Equipe à domicile">
+    <input type="text" name="equipe2" placeholder="Equipe à l'extérieure">
+    <br><br>
+    <input type="submit" name="Supprimer la rencontre">
+</form-->
+    
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<div id="footer" class="text-center">World Football Cup &copy; 2019 Acina Vick<br/>  
+</div>
